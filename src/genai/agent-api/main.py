@@ -19,7 +19,7 @@ def get_weather(latitude: float, longitude: float) -> str:
 
     temp = data["current"]["temperature_2m"]
     wind_speed = data["current"]["wind_speed_10m"]
-    return temp, wind_speed
+    return f"Temperature: {temp}°C, Wind Speed: {wind_speed} m/s"
 
 
 def main():
